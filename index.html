@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Energy Management Indonesia</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logoplnemi.png" alt="Logo" width="140" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        
+        <button 
+            id="theme-toggle" 
+            class="btn btn-outline-light ms-3" 
+            onclick="toggleTheme()"
+            aria-label="Toggle Theme"
+            >
+            ☀️
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="container position-relative z-2 text-white">
+      <h1 class="hero-title">Empowering Indonesia</h1>
+      <p class="hero-subtitle">Through Smart and Sustainable Energy Management</p>
+    </div>
+  </section>
+
+    <!-- About -->
+    <section id="about-section" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">About Us</h2>
+        
+            <div class="about-intro mb-5">
+            <p class="lead text-center">PT Energy Management Indonesia (MEI), established in 2010 as a strategic subsidiary of PT PLN (Persero), 
+                has been at the forefront of revolutionizing Indonesia's energy landscape.</p>
+            </div>
+        
+            <div class="row g-4">
+            <!-- Vision & Mission Box -->
+            <div class="col-lg-4">
+                <div class="about-box h-100 p-4">
+                <div class="icon-box bg-primary mb-4">
+                    <i class="fas fa-bullseye fa-2x text-white"></i>
+                </div>
+                <h3 class="mb-4">Our Vision</h3>
+                <blockquote class="vision-text">"To be Indonesia's leading enabler in smart energy transition, powering sustainable economic growth"</blockquote>
+      
+                <h3 class="mt-5 mb-4">Our Mission</h3>
+                <ul class="mission-list">
+                    <li class="d-flex mb-3">
+                    <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                    <span>Deliver cutting-edge energy management systems</span>
+                    </li>
+                    <li class="d-flex mb-3">
+                    <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                    <span>Pioneer renewable energy adoption nationwide</span>
+                    </li>
+                    <li class="d-flex">
+                    <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                    <span>Empower industries through energy efficiency</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <!-- Core Values Box -->
+            <div class="col-lg-4">
+                <div class="about-box h-100 p-4">
+                <div class="icon-box bg-primary mb-4">
+                    <i class="fas fa-handshake fa-2x text-white"></i>
+                </div>
+                <h3 class="mb-4">Core Values</h3>
+      
+                <div class="value-box mb-4 p-3">
+                    <h5 class="text-primary">Integrity & Professionalism</h5>
+                    <p class="mb-0">Upholding ethical standards in every business conduct</p>
+                </div>
+      
+                <div class="value-box mb-4 p-3">
+                    <h5 class="text-primary">Innovation in Energy Solutions</h5>
+                    <p class="mb-0">Leveraging technology for smarter energy utilization</p>
+                </div>
+      
+                <div class="value-box p-3">
+                    <h5 class="text-primary">Sustainability Commitment</h5>
+                    <p class="mb-0">Balancing business growth with environmental stewardship</p>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Key Achievement Box -->
+            <div class="col-lg-4">
+                <div class="about-box h-100 p-4">
+                <div class="icon-box bg-primary mb-4">
+                    <i class="fas fa-trophy fa-2x text-white"></i>
+                </div>
+                <h3 class="mb-4">Key Achievement</h3>
+      
+                <div class="achievement-box text-center p-3 mb-4">
+                    <div class="achievement-value display-4 fw-bold text-primary">1.2GW</div>
+                    <div class="achievement-desc">Renewable Energy Installed</div>
+                    <small>Across 15 Provinces</small>
+                </div>
+      
+                <div class="achievement-box text-center p-3 mb-4">
+                    <div class="achievement-value display-4 fw-bold text-primary">35%</div>
+                    <div class="achievement-desc">Average Energy Saving</div>
+                    <small>For industrial partners</small>
+                </div>
+      
+                <div class="certification-box text-center pt-3">
+                    <img src="images/s09.jpeg" alt="ISO 9001" width="80" class="m-2">
+                    <img src="images/s05.jpeg" alt="ISO 50001" width="80" class="m-2">
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+
+  <!-- Priority Energy Section -->
+  <section id="priority" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <h2 class="section-title mb-5">Priority Energy from Efficiency for Sustainability</h2>
+          
+          <div class="priority-content">
+            <p class="lead">
+              At PT Energy Management Indonesia, we prioritize energy efficiency as the foundation for sustainable development. 
+              Our integrated approach combines cutting-edge technology with strategic resource management to deliver:
+            </p>
+            
+            <div class="row g-4 mt-4">
+              <!-- Item 1 -->
+              <div class="col-md-4">
+                <div class="priority-item p-4 w-100">
+                  <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                  <h4>Energy Optimization</h4>
+                  <p>Maximizing output while minimizing energy consumption through smart analytics</p>
+                </div>
+              </div>
+              
+              <!-- Item 2 -->
+              <div class="col-md-4">
+                <div class="priority-item p-4 w-100">
+                  <i class="fas fa-recycle fa-3x text-primary mb-3"></i>
+                  <h4>Sustainable Solutions</h4>
+                  <p>Implementing renewable energy systems for long-term environmental impact</p>
+                </div>
+              </div>
+              
+              <!-- Item 3 -->
+              <div class="col-md-4">
+                <div class="priority-item p-4 w-100">
+                  <i class="fas fa-balance-scale fa-3x text-primary mb-3"></i>
+                  <h4>Eco-Efficiency</h4>
+                  <p>Balancing economic growth with ecological preservation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+    <section id="news" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 section-title">Latest News</h2>
+        <div class="row g-4">
+        <!-- News Item 1 -->
+        <div class="col-md-6">
+            <div class="news-card h-100 position-relative overflow-hidden">
+            <div class="news-img-container">
+                <img src="images/newshome.png" class="news-img" alt="Green Attribute">
+                <div class="img-overlay"></div>
+            </div>
+            <div class="news-content p-4">
+                <div class="news-meta d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-primary rounded-pill">Renewable Energy</span>
+                <span class="text-muted news-date">31 Jan 2025</span>
+                </div>
+                <h4 class="news-title mb-3">PT EMI Gelar RUPS RKAP 2025, Dorong Integrasi Bisnis Green Attribute</h4>
+                <p class="news-excerpt mb-4">PT Energy Management Indonesia (PT EMI) telah menggelar Rapat Umum Pemegang Saham (RUPS)...</p>
+                <div class="text-end">
+                <a href="news.html?id=1" class="btn btn-outline-primary btn-sm">
+                    Read More <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- News Item 2 -->
+        <div class="col-md-6">
+            <div class="news-card h-100 position-relative overflow-hidden">
+            <div class="news-img-container">
+                <img src="images/newshomee.png" class="news-img" alt="ISO Certification">
+                <div class="img-overlay"></div>
+            </div>
+            <div class="news-content p-4">
+                <div class="news-meta d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-success rounded-pill">Achievement</span>
+                <span class="text-muted news-date">17 Dec 2024</span>
+                </div>
+                <h4 class="news-title mb-3">Dari Bekas Jadi Berkelas: Kolaborasi TJSL EMI dan MCTN Dukung Inovasi Hexagon</h4>
+                <p class="news-excerpt mb-4">PT Energy Management Indonesia (EMI) bersama PT PLN Mandau Cipta Nusantara (MCTN)...</p>
+                <div class="text-end">
+                <a href="news.html?id=1" class="btn btn-outline-primary btn-sm">
+                    Read More <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="contact-info">
+            <div class="info-item mb-4">
+              <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+              <div>
+                <h5>Head Office</h5>
+                <p>Jl. Raya Pasar Minggu No.123, Jakarta</p>
+              </div>
+            </div>
+            <div class="info-item mb-4">
+              <i class="fas fa-phone fa-2x text-primary me-3"></i>
+              <div>
+                <h5>Phone</h5>
+                <p>+62 21 1234 5678</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+              <div>
+                <h5>Email</h5>
+                <p>info@emipersero.co.id</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form class="contact-form">
+            <div class="invalid-feedback">Harap isi nama Anda</div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-5">
+    <div class="container text-center">
+      <img src="images/logoemi.png" alt="PT Energy Management Indonesia Logo" width="120" class="mb-4">
+      <p class="footer-subtitle mb-4">Empowering Indonesia through Smart Energy Solutions</p>
+      <div class="footer-links mb-4">
+        <a href="index.html" class="text-decoration-none me-3">Home</a>
+        <a href="about.html" class="text-decoration-none me-3">About</a>
+        <a href="news.html" class="text-decoration-none me-3">News</a>
+        <a href="contact.html" class="text-decoration-none">Contact</a>
+      </div>
+      <div class="social-icons mb-4">
+        <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="text-decoration-none me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+        <a href="#" class="text-decoration-none"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+      <p class="text-muted small mb-0">&copy; 2025 PT Energy Management Indonesia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

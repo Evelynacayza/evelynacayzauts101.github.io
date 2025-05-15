@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - PT Energy Management Indonesia</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+            <img src="images/logoplnemi.png" alt="Logo" width="140" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+
+            <button 
+                id="theme-toggle" 
+                class="btn btn-outline-light ms-3" 
+                onclick="toggleTheme()"
+                aria-label="Toggle Theme"
+                >
+                ☀️
+            </button>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="contact-hero position-relative overflow-hidden">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-2 text-center py-8">
+      <div class="hero-content animate__animated animate__fadeInUp">
+        <h1 class="display-3 fw-bold text-white mb-4">Hubungi Kami</h1>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="hero-divider"></div>
+          <p class="lead text-white mb-0 mx-4">Kami siap menjawab semua pertanyaan Anda</p>
+          <div class="hero-divider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <main class="contact-content py-6">
+    <div class="container">
+      <div class="row g-5 justify-content-center">
+        <!-- Contact Info -->
+        <div class="col-lg-5 col-xl-4">
+          <div class="contact-info-card p-4 p-4 p-lg-5 h-100">
+            <div class="section-header mb-5">
+              <h2 class="h3 fw-bold gradient-text mb-3">Informasi Kontak</h2>
+              <div class="header-divider"></div>
+            </div>
+
+            <div class="info-item mb-4">
+              <div class="icon-box bg-primary">
+                <i class="fas fa-map-marker-alt fa-2x text-white"></i>
+              </div>
+              <div class="info-content">
+                <h4>Alamat Kantor</h4>
+                <p>Gedung Energy Tower Lt. 15<br>
+                Jl. Jend. Sudirman Kav. 52-53<br>
+                Jakarta Selatan 12190</p>
+              </div>
+            </div>
+
+            <div class="info-item mb-4">
+              <div class="icon-box bg-success">
+                <i class="fas fa-phone fa-2x text-white"></i>
+              </div>
+              <div class="info-content">
+                <h4>Telepon</h4>
+                <p>+62 21 1234 5678<br>
+                +62 21 8765 4321 (Fax)</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-box bg-info">
+                <i class="fas fa-envelope fa-2x text-white"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <p>info@emipersero.co.id<br>
+                support@emipersero.co.id</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7 col-xl-8">
+          <div class="contact-form-card p-4 p-lg-5 h-100">
+            <div class="section-header mb-5">
+              <h2 class="h3 fw-bold gradient-text mb-3">Kirim Pesan</h2>
+              <div class="header-divider"></div>
+              <p class="text-muted mt-3">Isi form berikut dan kami akan segera merespon</p>
+            </div>
+
+            <form class="contact-form needs-validation" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="Nama Lengkap" required>
+                    <label for="name" class="form-label">Nama Lengkap</label>
+                    <div class="invalid-feedback">Harap isi nama lengkap</div>
+                  </div>
+                </div>
+
+                <!-- Email Input -->
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input 
+                      type="email" 
+                      class="form-control" 
+                      id="email" 
+                      placeholder="name@example.com" 
+                      required
+                    >
+                    <label for="email">Alamat Email</label>
+                    <div class="invalid-feedback">Harap masukkan email yang valid</div>
+                  </div>
+                </div>
+
+                <!-- Subject Input -->
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="subject" 
+                      placeholder="Subjek Pesan" 
+                      required
+                    >
+                    <label for="subject">Subjek Pesan</label>
+                    <div class="invalid-feedback">Harap isi subjek pesan</div>
+                  </div>
+                </div>
+              
+                <!-- Message Input -->
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea 
+                      class="form-control" 
+                      id="message" 
+                      placeholder="Pesan Anda" 
+                      style="height: 150px" 
+                      required
+                    ></textarea>
+                    <label for="message">Pesan Anda</label>
+                    <div class="invalid-feedback">Harap tulis pesan Anda</div>
+                  </div>
+                </div>
+              
+                <!-- Submit Button -->
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-lg w-100 py-3">
+                    <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="row mt-6">
+        <div class="col-12">
+          <div class="map-container rounded-4 overflow-hidden shadow-sm">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613506864!3d-6.208741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e55b45%3A0x26030081ffd7a644!2sIndonesia%20Stock%20Exchange%20Building!5e0!3m2!1sen!2sid!4v1625559876000!5m2!1sen!2sid" 
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer py-5">
+    <div class="container text-center">
+      <img src="images/logoemi.png" alt="Logo Perusahaan" width="120" class="mb-4">
+      <p class="footer-subtitle mb-4">Empowering Indonesia through Smart Energy Solutions</p>
+      <div class="footer-links mb-4">
+        <a href="index.html" class="text-decoration-none me-3">Home</a>
+        <a href="about.html" class="text-decoration-none me-3">About</a>
+        <a href="news.html" class="text-decoration-none me-3">News</a>
+        <a href="contact.html" class="text-decoration-none">Contact</a>
+      </div>
+      <div class="social-icons mb-4">
+        <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="text-decoration-none me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+        <a href="#" class="text-decoration-none"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+      <p class="text-muted small mb-0">&copy; 2025 PT Energy Management Indonesia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
