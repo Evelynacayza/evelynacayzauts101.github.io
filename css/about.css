@@ -1,0 +1,665 @@
+/* === About Hero === */
+.profil-hero {
+  background: linear-gradient(45deg, rgba(0,60,113,0.9), rgba(0,119,204,0.9)),
+              url('../images/ne2.jpeg') center/cover fixed;
+  position: relative;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.hero-divider {
+  width: 80px;
+  height: 2px;
+  background: rgba(255,255,255,0.5);
+  margin: 1.5rem auto;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+    font-family:initial;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    font-family: initial;
+}
+
+.profil-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, var(--background), transparent);
+  z-index: 1;
+}
+
+/* === Section Header Divider === */
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.header-divider {
+  width: 100px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 1.5rem auto;
+}
+
+/* === Leadership Section === */
+.leadership-section {
+  background: var(--background);
+  border-radius: 1.5rem;
+  margin: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+  background: linear-gradient(135deg, 
+    rgba(108,155,207,0.08) 0%, 
+    rgba(255,255,255,0.2) 100%);
+}
+
+.leadership-card {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background: rgba(255,255,255,0.95) !important;
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  border: 1px solid rgba(108,155,207,0.15);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+  top: 0;
+  transition: top 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leadership-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 48%,
+    rgba(108,155,207,0.05) 50%,
+    transparent 52%
+  );
+  transform: rotate(45deg);
+  z-index: 0;
+  animation: gradientFlow 20s linear infinite;
+}
+
+
+.leadership-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-color: var(--primary-color);
+  top: -5px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin: 2rem 0 3rem;
+  letter-spacing: -0.5px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(13,110,253,0.2);
+}
+
+.profile-img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  border: 3px solid var(--primary-color);
+  padding: 0.25rem;
+  background: white;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(108,155,207,0.1);
+}
+
+.profile-img-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, 
+    rgba(255,255,255,0.2), 
+    rgba(255,255,255,0));
+  z-index: 1;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  transform-origin: center center;
+}
+
+.leadership-card:hover .profile-img {
+  transform: scale(1.08);
+}
+
+.avatar-frame {
+  width: max-content;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+  padding: 8px;
+}
+
+.position-label {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: rgba(108,155,207,0.1);
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(108,155,207,0.2);
+  backdrop-filter: blur(4px);
+}
+
+.leader-name {
+  color: var(--text-color);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.leader-bio {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  color: var(--primary-color);
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--navy-dark);
+  transform: translateY(-2px);
+}
+
+.display-5 {
+  font-size: 2.2rem;
+  letter-spacing: -0.5px;
+}
+
+.bg-primary-soft {
+  background-color: rgba(13,110,253,0.1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Improved Typography */
+.leadership h2 {
+  font-size: 2.4rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 4rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.leadership h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color, #0d6efd);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Enhanced Hover Effects */
+.leadership-card:hover .position-label {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 12px rgba(13,110,253,0.2);
+}
+
+
+
+/* === History / Profil Section === */
+.history-mission {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 4rem;
+}
+
+.history-img {
+  padding: 0.5rem;
+}
+
+.history-img img {
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.history-img:hover img {
+  transform: scale(1.02);
+}
+
+.achievement-item {
+  border-radius: 10px;
+  color: white;
+}
+
+.achievement-item .display-6 {
+  font-weight: bold;
+}
+
+/* === Governance Section === */
+.governance-section {
+  padding-top: 6rem;
+  padding-bottom: 7rem !important;
+  background-color: #f8f9fa;
+  margin-bottom: rem !important;
+}
+
+.governance-card{
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  height: 100%;
+}
+
+.governance-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.8);
+}
+
+.icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+}
+
+/* === Struktur Organisasi === */
+.org-structure {
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.org-structure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--accent-grey);
+}
+
+.struktur-organisasi-section {
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  background-color: #f8f9fa;
+}
+
+.struktur-img-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.struktur-img-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+}
+
+.struktur-img-wrapper img {
+  border-radius: 0.75rem;
+}
+
+
+/* ===== Timeline Section ===== */
+.history-timeline {
+  background: var(--card-bg);
+  position: relative;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.timeline-bar {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  bottom: 40px;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--primary-color), #198754);
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 90px;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.timeline-badge {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.timeline-content {
+  background: rgba(255,255,255,0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  backdrop-filter: blur(8px);
+  transition: var(--transition-base);
+}
+
+.timeline-content:hover {
+  transform: translateX(10px);
+}
+
+/* ===== Visi Misi Cards ===== */
+.vm-card {
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+  overflow: hidden;
+  position: relative;
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.vm-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1));
+  transform: rotate(45deg);
+}
+
+.vm-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary-color), #0b5ed7);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #198754, #157347);
+}
+
+
+/* === Responsive === */
+@media (max-width: 576px) {
+  .vm-card {
+    padding: 1rem !important;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .governance-card {
+    padding: 1.5rem;
+  }
+
+  .leadership h2 {
+    font-size: 1.8rem;
+  }
+  
+  .profile-img-container {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .leadership-card {
+    padding: 1.25rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .profil-hero {
+    padding: 100px 0;
+  }
+
+  .profile-img-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .history-timeline {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  
+  .timeline-bar {
+    display: none;
+  }
+  
+  .timeline-item {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px var(--card-shadow)
+  }
+  
+  .timeline-badge {
+    position: static;
+    margin-bottom: 1rem;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  
+  .vm-card {
+    padding: 1.5rem !important;
+  }
+
+  .leadership-card {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .leadership h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .position-label {
+    font-size: 0.85rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .profile-img-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .leadership-card:hover {
+    transform: translateY(-3px); /* Lebih kecil di mobile */
+    top: -3px;
+  }
+
+  .footer-content .container-fluid {
+    padding: 0 1.5rem; /* Sesuaikan untuk mobile */
+  }  
+  .governance-section {
+    padding-bottom: 5rem !important;
+    margin-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .timeline-bar {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    padding-left: 70px;
+  }
+  
+  .timeline-badge {
+    left: 15px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@keyframes gradientFlow {
+  0% { transform: rotate(45deg) translateX(0); }
+  100% { transform: rotate(45deg) translateX(-50%); }
+}
+
+
+/* ===== Text & Typography ===== */
+blockquote {
+  font-style: italic;
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px solid var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.vm-card ul li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.vm-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.8);
+}
+
+/* Dark mode specific adjustments */
+[data-bs-theme="dark"] {
+    #contact {
+        background: var(--card-bg);
+        border-color: rgba(108,155,207,0.2);
+    }
+
+    footer {
+        background: var(--background-dark);
+    }
+    
+    .contact-info .fa-icon {
+        color: var(--accent-lightyellow) !important;
+    }
+    
+    .contact-form .form-control {
+        background: rgba(255,255,255,0.05);
+    }
+    
+    .btn-primary:hover {
+        background: var(--primary-color);
+        color: var(--light-white);
+    }
+}
+
